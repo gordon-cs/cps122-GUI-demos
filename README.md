@@ -8,5 +8,5 @@ Example of how to run most demos:
 
 
 ComboBoxDemo uses the objectdraw library
-* To compile: javac -cp .:objectdraw.jar ComboBoxDemo.java
-* To run: java -cp .:objectdraw.jar ComboBoxDemo
+* javac -cp .:objectdraw.jar ComboBoxDemo.java
+* java -cp .:objectdraw.jar ComboBoxDemo
