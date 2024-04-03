@@ -30,7 +30,7 @@ public class ComboBoxDemo extends WindowController implements ActionListener {
 
     String[] options = {"Slow", "Medium", "Fast"};
     speedChoice = new JComboBox<String>(options);
-    speedChoice.setSelectedItem( "Medium" ); // Display "Medium" initially
+    speedChoice.setSelectedItem( "Slow" ); // Display "Medium" initially
     speedChoice.addActionListener ( this );    // this class is listener
         
     Container contentPane = getContentPane(); // Add combo box to south
