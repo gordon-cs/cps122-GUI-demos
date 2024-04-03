@@ -1,0 +1,9 @@
+# Compiled class file
+*.class
+
+# Mac Finder files
+.DS_Store
+._.DS_Store
+
+# Emacs temporary files
+*~
