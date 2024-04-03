@@ -1,4 +1,4 @@
-/* MultipleEvents42.java
+/* MultipleEvents2.java
  *
  * This program illustrates one way to handle multiple events in a
  * single program - by having a different listener for each event
