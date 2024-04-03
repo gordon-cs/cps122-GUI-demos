@@ -12,13 +12,14 @@ public class ComboBoxDemo extends WindowController implements ActionListener {
   // location of instructions
   private static final Location INSTR_LOCATION = new Location(100,25);
     
-  private static final int SLOW_SPEED = 1,   // slow setting
+  private static final int
+    SLOW_SPEED = 1,   // slow setting
     MEDIUM_SPEED = 3, // medium setting
-    FAST_SPEED = 10;   // fast setting
+    FAST_SPEED = 10;  // fast setting
     
   private FallingBall droppedBall; // the falling ball
     
-  private JComboBox speedChoice;   // Combo box to select ball speed
+  private JComboBox<String> speedChoice;   // Combo box to select ball speed
   private int speed;               // Current speed setting
     
   // display instructions and combo box
@@ -27,13 +28,9 @@ public class ComboBoxDemo extends WindowController implements ActionListener {
 
     speed = SLOW_SPEED;
 
-    speedChoice = new JComboBox();         //construct combo box
-        
-    speedChoice.addItem ( "Slow" );        // Add 3 entries
-    speedChoice.addItem ( "Medium" );
-    speedChoice.addItem ( "Fast" );
+    String[] options = {"Slow", "Medium", "Fast"};
+    speedChoice = new JComboBox<String>(options);
     speedChoice.setSelectedItem( "Medium" ); // Display "Medium" initially
-
     speedChoice.addActionListener ( this );    // this class is listener
         
     Container contentPane = getContentPane(); // Add combo box to south
